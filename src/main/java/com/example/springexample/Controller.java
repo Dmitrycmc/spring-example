@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
     @GetMapping("/hello")
     public String hello() {
-        return "<h1>Hello, Spring</h1>";
+        return "<h1>Hello, Heroku from container!</h1>";
     }
 }
