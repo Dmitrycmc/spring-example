@@ -1,8 +1,5 @@
 #!/bin/sh
 
-echo "Started building" && \
-./mvnw clean dependency:list install && \
-echo "Finished building" && \
 
 cp ./target/spring-example-0.0.1-SNAPSHOT.jar app.jar && \
 
