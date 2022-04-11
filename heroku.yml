@@ -1,3 +1,5 @@
 build:
   docker:
-    web: Dockerfile
+    spring-demo-1: spring-demo-1/Dockerfile
+    spring-demo-2: spring-demo-2/Dockerfile
+    web: spring-gateway/Dockerfile
