@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: ${PORT:8080}
 spring:
   application:
     name: spring-gateway
@@ -7,10 +7,10 @@ spring:
     gateway:
       routes:
         - id: spring-demo-1
-          uri: http://localhost:8081
+          uri: ${SPRING_DEMO_1_URL:http://localhost:8081}
           predicates:
             - Path=/hello1
         - id: spring-demo-2
-          uri: http://localhost:8082
+          uri: ${SPRING_DEMO_2_URL:http://localhost:8082}
           predicates:
             - Path=/hello2

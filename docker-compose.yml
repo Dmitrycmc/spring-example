@@ -1,0 +1,23 @@
+version: '3'
+services:
+  spring-demo-1:
+    image: spring-example/spring-demo-1:latest
+    environment:
+      PORT: 80
+
+  spring-demo-2:
+    image: spring-example/spring-demo-2:latest
+    environment:
+      PORT: 80
+
+  spring-gateway:
+    image: spring-example/spring-gateway:latest
+    ports:
+      - 80:8080
+    depends_on:
+      - spring-demo-1
+      - spring-demo-2
+    environment:
+      PORT: 8080
+      SPRING_DEMO_1_URL: http://spring-demo-1
+      SPRING_DEMO_2_URL: http://spring-demo-2

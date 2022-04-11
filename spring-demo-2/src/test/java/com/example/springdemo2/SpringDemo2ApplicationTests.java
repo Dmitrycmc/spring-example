@@ -3,7 +3,7 @@ package com.example.springdemo2;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+//@SpringBootTest
 class SpringDemo2ApplicationTests {
 
     @Test
