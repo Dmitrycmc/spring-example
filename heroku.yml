@@ -3,3 +3,6 @@ build:
     spring-demo-1: spring-demo-1/Dockerfile
     spring-demo-2: spring-demo-2/Dockerfile
     web: spring-gateway/Dockerfile
+  config:
+    SPRING_DEMO_1_URL: http://spring-demo-1
+    SPRING_DEMO_2_URL: http://spring-demo-2
