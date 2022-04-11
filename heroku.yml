@@ -2,4 +2,4 @@ build:
   docker:
     spring-demo-1: spring-demo-1/Dockerfile
     spring-demo-2: spring-demo-2/Dockerfile
-    spring-gateway: spring-gateway/Dockerfile
+    web: spring-gateway/Dockerfile
